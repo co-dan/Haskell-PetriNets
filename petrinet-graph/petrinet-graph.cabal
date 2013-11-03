@@ -1,0 +1,21 @@
+name:                petrinet-graph
+version:             0.1.0
+synopsis:            Petri nets tools for Haskell - Visual output library
+-- description:         
+license:             MIT
+license-file:        LICENSE
+author:              Daniil Frumin
+maintainer:          difrumin@gmail.com
+-- copyright:           
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     PetriNet.Graphviz
+  build-depends:       base >=4.6 && <4.7,
+                       petrinet-core,
+                       petrinet-posem,
+                       containers >=0.5 && <0.6
+  hs-source-dirs:      src
+  default-language:    Haskell2010

@@ -1,0 +1,25 @@
+name:                petrinet-algo
+version:             0.1.0
+synopsis:            Petri net tools for Haskell - additional algorithms
+-- description:         
+license:             MIT
+license-file:        LICENSE
+author:              Daniil Frumin
+maintainer:          difrumin@gmail.com
+-- copyright:           
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     PetriNet.Liveness,
+                       PetriNet.CTL,
+                       PetriNet.Bisimilarity,
+                       PetriNet.StateSpace
+  build-depends:       base >=4.6 && <4.7,
+                       containers >=0.5 && <0.6,
+                       fgl >=5.4 && <5.5,
+                       mtl >=2.1 && <2.2,
+                       petrinet-core >=0.1 && <0.2,
+                       text >=0.11 && <0.12
+  hs-source-dirs:      src
+  default-language:    Haskell2010
